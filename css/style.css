@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html, body{
+    width:100%;
+    height: 100%; 
+}
+
+body {
+    
+    font-family: 'GmarketSansMedium';
+    color: gold;
+        
+}
+
+
+/*body - section(contents) - div (wrapper) - div(4) 
+*/
+
+.wrapper{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width : 100%;
+    height : 100%;
+    background-image: url("../imgs/bkg.png") ;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+        
+}
+
+
+.title{
+    width: 100%;
+    height: 15%;
+    font-size: 100px;
+    text-align: center;
+    margin: 120px 0px 50px 0px;
+}
+
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.intro .intro_saying{
+    color: #F5DF4D;
+    font-family: 'OTEnjoystoriesBA'; 
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+
+.day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    
+}
+
+.day .day_wrap{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+     
+}
+
+
+.day .day_wrap .day_button{
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #FCEE21;
+    border: none;
+    font-size:20px;
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    color: crimson;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    cursor : pointer;
+}
+
+
+@keyframes rotate{
+    100%{transform: rotate(360deg);
+    }
+}
+.moon img{
+    margin-left: 25%;
+    max-width:1000px;
+    max-height:1000px;
+    animation: rotate 100s infinite linear;
+}
+
+
+
+
+    
+
+
+.loading .loading_wrap img{
+    
+    width: 100px;
+    height: auto;
+    animation: rotate 1.6s infinite linear;
+    
+}
+
+.result{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    
+    
+}
+
+.result .result_wrap{
+    font-size: 20px;
+    
+    
+    
+    
+}
