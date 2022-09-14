@@ -1,3 +1,17 @@
+function change() {
+    const subs = document.getElementById('d_day');
+    
+    const fmTime = new Date("2022-9-10");
+    const todayTime = new Date();
+    
+    const diff = fmTime - todayTime;
+    
+    const diffDay = String(Math.floor(diff / (1000*60*60*24)));
+    
+    subs.innerText = `올해 추석까지 ${diffDay}일 남았습니다.`;
+}
+
+
 function init(){
 
   //estrelas
@@ -45,16 +59,3 @@ function init(){
 }
 
 window.onload = init;
-
-function change() {
-    const subs = document.getElementById('d_day');
-    
-    const fmTime = new Date("2022-9-10");
-    const todayTime = new Date();
-    
-    const diff = fmTime - todayTime;
-    
-    const diffDay = String(Math.floor(diff / (1000*60*60*24)));
-    
-    subs.innerText = `올해 추석까지 ${diffDay}일 남았습니다.`;
-}
