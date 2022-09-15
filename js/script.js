@@ -8,7 +8,7 @@ function change() {
     
     const diffDay = String(Math.floor(diff / (1000*60*60*24)));
     
-    subs.innerText = `올해 추석까지 ${diffDay}일 남았습니다.`;
+    subs.innerText = `추석까지 ${diffDay}일 남았습니다`;
 }
 
 

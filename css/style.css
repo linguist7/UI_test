@@ -291,7 +291,6 @@ body {
     border: none;
     font-size:20px;
     font-family: 'GmarketSansMedium';
-    font-weight: bold;
     color: #FCEE21;
     margin-left: 40px;
     margin-right: 20px;
@@ -299,8 +298,11 @@ body {
     z-index: 1;
 }
 
+
 .day .day_button:hover{
-  cursor:pointer;
+    font-size:25px;
+    font-weight: bold;
+    cursor:pointer;
 }
 
 
